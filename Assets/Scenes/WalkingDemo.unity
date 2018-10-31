@@ -153,16 +153,16 @@ MonoBehaviour:
     LowFreqTransmission: 0.1
     MidFreqTransmission: 0.05
     HighFreqTransmission: 0.03
-  simulationPreset: 1
+  simulationPreset: 0
   simulationValue:
     OcclusionSamples: 128
-    RealtimeRays: 8192
+    RealtimeRays: 4096
     RealtimeSecondaryRays: 1024
-    RealtimeBounces: 4
+    RealtimeBounces: 2
     RealtimeThreadsPercentage: 5
-    BakeRays: 32768
+    BakeRays: 16384
     BakeSecondaryRays: 4096
-    BakeBounces: 64
+    BakeBounces: 32
     BakeThreadsPercentage: 5
     Duration: 1
     AmbisonicsOrder: 1
@@ -3298,7 +3298,7 @@ AudioSource:
   Loop: 1
   Mute: 0
   Spatialize: 1
-  SpatializePostEffects: 1
+  SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 0
   MinDistance: 0.1
@@ -3399,7 +3399,6 @@ GameObject:
   m_Component:
   - component: {fileID: 658493313}
   - component: {fileID: 658493312}
-  - component: {fileID: 658493315}
   - component: {fileID: 658493314}
   m_Layer: 0
   m_Name: ShoreAmbience
@@ -3416,7 +3415,8 @@ AudioSource:
   m_GameObject: {fileID: 658493311}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 64eb70b858817429c933230bedf4dc86,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: cc5aa357c83984a9b9546c0dc3831abe, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -3556,28 +3556,6 @@ MonoBehaviour:
   bakedDataIdentifier:
     identifier: 0
     type: 0
---- !u!164 &658493315
-AudioReverbFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 658493311}
-  m_Enabled: 1
-  m_DryLevel: 0
-  m_Room: -1000
-  m_RoomHF: -2000
-  m_DecayTime: 1.49
-  m_DecayHFRatio: 0.5
-  m_ReflectionsLevel: -2466
-  m_ReverbLevel: -1926
-  m_ReverbDelay: 0.1
-  m_Diffusion: 21
-  m_Density: 100
-  m_HFReference: 5000
-  m_RoomLF: 0
-  m_LFReference: 250
-  m_ReflectionsDelay: 0
-  m_ReverbPreset: 20
 --- !u!1 &825034406
 GameObject:
   m_ObjectHideFlags: 0
@@ -4180,7 +4158,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1247962570}
   - component: {fileID: 1247962569}
-  - component: {fileID: 1247962572}
   - component: {fileID: 1247962571}
   m_Layer: 0
   m_Name: ShoreAmbience2
@@ -4197,7 +4174,8 @@ AudioSource:
   m_GameObject: {fileID: 1247962568}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 64eb70b858817429c933230bedf4dc86,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: 35e8eb79f78294ec9a910ef2df179286, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -4337,28 +4315,6 @@ MonoBehaviour:
   bakedDataIdentifier:
     identifier: 0
     type: 0
---- !u!164 &1247962572
-AudioReverbFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1247962568}
-  m_Enabled: 1
-  m_DryLevel: 0
-  m_Room: -1000
-  m_RoomHF: -2000
-  m_DecayTime: 1.49
-  m_DecayHFRatio: 0.5
-  m_ReflectionsLevel: -2466
-  m_ReverbLevel: -1926
-  m_ReverbDelay: 0.1
-  m_Diffusion: 21
-  m_Density: 100
-  m_HFReference: 5000
-  m_RoomLF: 0
-  m_LFReference: 250
-  m_ReflectionsDelay: 0
-  m_ReverbPreset: 20
 --- !u!1 &1345392797
 GameObject:
   m_ObjectHideFlags: 0
